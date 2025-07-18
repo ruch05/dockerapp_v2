@@ -15,3 +15,8 @@ services:
       ME_CONFIG_MONGODB_ADMINUSERNAME: admin
       ME_CONFIG_MONGODB_ADMINPASSWORD: qwerty
       ME_CONFIG_MONGODB_URL: mongodb://admin:qwerty@mongo:27017/
+  testapp:
+    build: .
+    image: "testapp_v2"
+    ports:
+      - "5050:5050"
